@@ -3,7 +3,7 @@ automatic pick hero in overwatch
 
 ## DEMO
 
-[](http://player.youku.com/player.php/sid/XMjUwODI2Mzc5Mg==/v.swf)
+[![]()](http://player.youku.com/player.php/sid/XMjUwODI2Mzc5Mg==/v.swf)
 
 ## How to use 
 
