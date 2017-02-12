@@ -3,7 +3,8 @@ automatic pick hero in overwatch
 
 ## How to use 
 
-- execute `hero.exe`
+- download exec file from [here](https://github.com/ufo22940268/heropicker/releases)
+- execute `pick_pig.exe`
 - launch OW
 - press <kbd>F3</kbd>
 - it will automatically pick hero for you.
