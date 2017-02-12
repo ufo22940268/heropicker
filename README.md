@@ -12,7 +12,7 @@ automatic pick hero in overwatch
 - launch OW
 - press <kbd>F3</kbd>
 - it will automatically pick hero for you.
-
+- script will stop when hero is selected. And you can press <kbd>F3</kbd> any time to stop script.
 ## TODO
 
 - [ ] only support 1920x1080 resolution.
