@@ -17,4 +17,4 @@ automatic pick hero in overwatch
 ## TODO
 
 - [ ] only support 1920x1080 resolution.
-- [ ] only support pick pig. But will support all heroes soon. And you can also change the cursor to support other hero.
+
