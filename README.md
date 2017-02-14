@@ -2,8 +2,8 @@
 automatic pick hero in overwatch
 
 ## DEMO
-![](./msc/gui)
-[![](./msc/video)](http://player.youku.com/player.php/sid/XMjUwODI2Mzc5Mg==/v.swf)
+![](./msc/gui.png)
+[![](./msc/video.png)](http://player.youku.com/player.php/sid/XMjUwODI2Mzc5Mg==/v.swf)
 
 ## How to use 
 
