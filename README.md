@@ -1,5 +1,5 @@
 # heropicker
-automatic pick hero in overwatch
+Automatic pick hero in overwatch
 
 ## DEMO
 ![](./msc/gui.png)
