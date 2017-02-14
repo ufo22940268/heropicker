@@ -14,7 +14,7 @@ This program is written with ahk script. So it only does some simulate mouse cli
 - download exec file from [here](https://github.com/ufo22940268/heropicker/releases)
 - execute `pickhero.exe`
 - select the hero you want this tool to pick
-- launch OW
+- launch OW and set display mode to borderless windowed mode in display settings
 - press <kbd>F3</kbd>
 - it will automatically pick hero for you.
 - script will stop when hero is selected. And you can press <kbd>F3</kbd> any time to stop script.
