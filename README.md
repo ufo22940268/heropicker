@@ -3,7 +3,7 @@ Automatic pick hero in overwatch
 
 ## How it work
 
-This program is written with ahk script. So it only does some simulate mouse click and some screen recognition. I have play overwatch with it for a week and everything works fine.
+This program is written with ahk script. So it only does some simulate mouse click and some screen recognition. I have played overwatch with it for a week and everything works fine.
 
 ## DEMO
 ![](./msc/gui.png)
