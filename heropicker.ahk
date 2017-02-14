@@ -83,7 +83,7 @@ Loop
     {
         MouseClick, left, x, y
         MouseClick, left, 980, 1000
-        Sleep, 500
+        Sleep, 200
     }
     else if Compare(ToRGB(colorSelected), ToRGB(0xffffff)) 
     {
