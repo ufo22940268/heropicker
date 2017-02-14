@@ -11,7 +11,7 @@ for key, val in heroes
     heroNames .= key . "|"
 
 
-Gui, Add, DropDownList,Choose1 x173 y45 w190 h90 vList1 gAction, %heroNames%
+Gui, Add, DropDownList,x173 y45 w190 h90 vList1 gAction, %heroNames%
 
 Gui, Add, Text, x43 y43 w100 h20 , Select hero
 Gui, Add, Text, x43 y81 w290 h30 , Press F3 when start matching
@@ -19,13 +19,15 @@ Gui, Show, w401 h130, Hero picker
 ; Generated using SmartGUI Creator for SciTE
 return
 
-selection :=
+x := 
+y :=
+
 
 Action:
-Gui, Submit, nohide
-result := StrSplit(heroes[List1], ":")
-x := % result[1]
-y := % result[2]
+    Gui, Submit, nohide
+    result := StrSplit(heroes[List1], ":")
+    x := % result[1]
+    y := % result[2]
 return
 
 GuiClose:
@@ -50,13 +52,14 @@ stopPrompt() {
 
 
 
+#MaxThreadsPerHotkey 3
 F3::  
 #MaxThreadsPerHotkey 1
 if KeepWinZRunning  ; This means an underlying thread is already running the loop below.
 {
     KeepWinZRunning := false  ; Signal that thread's loop to stop.
     stopPrompt()
-    return  ; End this thread so that the one underneath will resume and see the change made by the line above.
+    return 
 }
 ; Otherwise:
 KeepWinZRunning := true
@@ -65,36 +68,32 @@ firstRun := true
 
 Loop
 {
-    MouseClick, left, x, y
-    PixelGetColor, color, 1371, 888
-    PixelGetColor, color1, 63, 277
-
+    PixelGetColor, color, 1065, 868
+    PixelGetColor, colorSelected, 747, 848
+ 
     if firstRun
         TrayTip,, select hero program started
-        firstRun := false
+    
+    firstRun := false
         
-    MouseClick, left, 980, 1000
     if not KeepWinZRunning  ; The user signaled the loop to stop by pressing Win-Z again.
         break  ; Break out of this loop.
-    ;~ if Compare(ToRGB(color), ToRGB(0x444344)) 
-    ;~ {
-        ;~ MouseClick, left, 980, 1000
-        ;~ stopPrompt()
-        ;~ break  ; Break out of this loop.
-    ;~ }
-    ;~ else if Compare(ToRGB(color1), ToRGB(0x8EFFFF)) 
-    ;~ {
-        ;~ KeepWinZRunning := false
-        ;~ break
-    ;~ }
-    ;~ else
-    ;~ {
-        ;~ if not KeepWinZRunning  ; The user signaled the loop to stop by pressing Win-Z again.
-            ;~ break  ; Break out of this loop.
-    ;~ }
 
+    if Compare(ToRGB(color), ToRGB(0xffffff)) 
+    {
+        MouseClick, left, x, y
+        MouseClick, left, 980, 1000
+        Sleep, 500
+    }
+    else if Compare(ToRGB(colorSelected), ToRGB(0xffffff)) 
+    {
+        KeepWinZRunning := false
+        stopPrompt()
+        break
+    }
 }
 KeepWinZRunning := false  ; Reset in preparation for the next press of this hotkey.
 firstRun := false
 
 return
+^!p::Pause  
