@@ -1,6 +1,10 @@
 # heropicker
 Automatic pick hero in overwatch
 
+## How it work
+
+This program is written with ahk script. So it only does some simulate mouse click and some screen recognition. I have play overwatch with it for a week and everything works fine.
+
 ## DEMO
 ![](./msc/gui.png)
 [![](./msc/video.png)](http://player.youku.com/player.php/sid/XMjUwODI2Mzc5Mg==/v.swf)
