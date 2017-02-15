@@ -11,7 +11,7 @@ This program is written with ahk script. So it only does some simulate mouse cli
 
 ## How to use 
 
-- download exec file from [here](https://github.com/ufo22940268/heropicker/releases)
+- download exe file from [here](https://github.com/ufo22940268/heropicker/releases)
 - execute `pickhero.exe` and select the hero you want this tool to pick
 - launch OW and set display mode to borderless windowed mode in display settings
 - start matching
