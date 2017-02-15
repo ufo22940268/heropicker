@@ -16,7 +16,7 @@ This program is written with ahk script. So it only does some simulate mouse cli
 - launch overwatch and set display mode to borderless windowed mode in display settings
 - start matching in overwatch
 - press <kbd>F3</kbd>
-- it will automatically pick hero for you.
+- when game start, it will automatically pick hero for you.
 - script will stop when hero is selected. And you can press <kbd>F3</kbd> any time to stop script.
 
 ## TODO
